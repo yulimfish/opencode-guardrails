@@ -1,24 +1,23 @@
 {
-  "name": "opencode-codex-guardrails",
-  "version": "0.1.1",
-  "description": "opencode 的 Codex 风格执行前安全层：硬拦不可挽回的命令（rm -rf /、fork bomb、curl|sh、mkfs、dd）、展开 bash -c / python -c payload、对破坏性但合法的 git/sql/sudo 操作弹提示，并把模型轻推向 Read/Grep/Glob 而不是 cat/head/tail/find/sed/awk。",
+  "name": "opencode-guardrails",
+  "version": "0.2.0",
+  "description": "opencode 的执行前安全层：硬拦不可挽回的命令（rm -rf /、fork bomb、curl|sh、mkfs、dd）、展开 bash -c / python -c payload、对破坏性但合法的 git/sql/sudo 操作弹提示，并把模型轻推向 Read/Grep/Glob 而不是 cat/head/tail/find/sed/awk。",
   "keywords": [
     "opencode",
     "opencode-plugin",
     "safety",
     "guardrails",
-    "codex",
     "shell-safety"
   ],
   "author": "Yulimfish <epeiuss@waterflames.cn>",
   "license": "MIT",
-  "homepage": "https://github.com/Yulimfish/opencode-codex-guardrails",
+  "homepage": "https://github.com/Yulimfish/opencode-guardrails",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yulimfish/opencode-codex-guardrails.git"
+    "url": "git+https://github.com/Yulimfish/opencode-guardrails.git"
   },
   "bugs": {
-    "url": "https://github.com/Yulimfish/opencode-codex-guardrails/issues"
+    "url": "https://github.com/Yulimfish/opencode-guardrails/issues"
   },
   "type": "module",
   "main": "./index.ts",

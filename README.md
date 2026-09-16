@@ -1,6 +1,6 @@
-# opencode-codex-guardrails
+# opencode-guardrails
 
-> Codex 风格的执行前安全层，为 [opencode](https://github.com/opencode-ai/opencode) 而生。硬拦不可挽回的 shell 命令，展开 shell-wrapper 规避写法，对破坏性但合法的操作弹提示，还会轻推模型走 opencode 自带的专用工具。
+> opencode 的执行前安全层。硬拦不可挽回的 shell 命令，展开 shell-wrapper 规避写法，对破坏性但合法的操作弹提示，还会轻推模型走 opencode 自带的专用工具。
 
 从个人 opencode 配置里抽离硬化而来，灵感来自 [cc-safety-net](https://github.com/kenryu42/cc-safety-net)。
 
@@ -20,7 +20,7 @@
 ## 安装
 
 ```bash
-npm install opencode-codex-guardrails
+npm install opencode-guardrails
 ```
 
 在 `~/.config/opencode/opencode.jsonc` 里：
@@ -28,7 +28,7 @@ npm install opencode-codex-guardrails
 ```jsonc
 {
   "plugin": [
-    "opencode-codex-guardrails"
+    "opencode-guardrails"
   ]
 }
 ```

@@ -1,5 +1,5 @@
 /**
- * codex-guardrails — pre-execution safety layer for opencode.
+ * guardrails — pre-execution safety layer for opencode.
  *
  * Combines original protections with cc-safety-net-inspired mechanics:
  *
@@ -148,7 +148,7 @@ function evaluate(cmd: string, depth = 0): { action: "allow" | "prompt" | "block
 
 // --- plugin -----------------------------------------------------------------
 
-export const CodexGuardrailsPlugin: Plugin = async () => {
+export const GuardrailsPlugin: Plugin = async () => {
   return {
     "tool.execute.before": async (input, output) => {
       if (input.tool === "bash") {
@@ -184,4 +184,4 @@ export const CodexGuardrailsPlugin: Plugin = async () => {
   }
 }
 
-export default CodexGuardrailsPlugin
+export default GuardrailsPlugin
